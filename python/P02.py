@@ -3,5 +3,6 @@
 # 1.02 (*) Find the last but one element of a list.
 #     (de: zweitletztes Element, fr: avant-dernier élément)
 
-def p02(data):
+
+def func(data):
     return data[-2]
