@@ -2,6 +2,7 @@ import P01
 import P02
 import P03
 import P04
+import P05
 
 
 def test_p01_with_list_returns_last_one():
@@ -35,3 +36,10 @@ def test_p04_with_list_returns_length_one():
 def test_p04_with_list_returns_length_two():
     assert 5 == P04.func([5, 5, 5, 5, 4])
 
+
+def test_p05_with_list_returns_rev_one():
+    assert [0, 4, 5, 6] == P05.func([6, 5, 4, 0])
+
+
+def test_p05_with_list_returns_rev_two():
+    assert [4, 3, 19] == P05.func([19, 3, 4])
