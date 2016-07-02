@@ -5,6 +5,7 @@ import P04
 import P05
 import P06
 import P07
+import P08
 
 
 def test_p01_with_list_returns_last_one():
@@ -61,3 +62,10 @@ def test_p07_with_list_returns_flat_one():
 
 def test_p07_with_list_returns_flat_two():
     assert [10, 9, 10, 34, 2, 3, 6] == P07.funcl([[[10], 9, 10], 34, 2, 3, 6])
+
+
+def test_p08_with_list_removes_dupes_one():
+    assert [0, 10, 8] == P08.func([0, 0, 0, 0, 10, 10, 10, 8, 8, 8, 8])
+
+def test_p08_with_list_removes_dupes_two():
+    assert [1, -2, 5] == P08.func([1, 1, 1, -2, 5, 5, 5, 5, 5])
