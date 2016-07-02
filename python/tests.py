@@ -3,6 +3,7 @@ import P02
 import P03
 import P04
 import P05
+import P06
 
 
 def test_p01_with_list_returns_last_one():
@@ -43,3 +44,11 @@ def test_p05_with_list_returns_rev_one():
 
 def test_p05_with_list_returns_rev_two():
     assert [4, 3, 19] == P05.func([19, 3, 4])
+
+
+def test_p06_with_palindrome_returns_true():
+    assert True == P06.func([2, 5, 2])
+
+
+def test_p06_with_not_palindrome_returns_false():
+    assert False == P06.func([2, 3, 1, 8])
