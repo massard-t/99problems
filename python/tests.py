@@ -9,6 +9,7 @@ import P08
 import P09
 import P10
 import P11
+import P12
 
 
 def test_p01_with_list_returns_last_one():
@@ -97,3 +98,11 @@ def test_p11_with_list_lists_dupes_one():
 
 def test_p11_with_list_lists_dupes_two():
     assert [[3, 1], -2, [5, 5]] == P11.func([1, 1, 1, -2, 5, 5, 5, 5, 5])
+
+
+def test_p12_with_list_lists_dupes_one():
+    assert [0, 0, 0, 0, 10, 10, 10, 8] == P12.func([[4, 0], [3, 10], 8])
+
+
+def test_p12_with_list_lists_dupes_two():
+    assert [1, 1, 1, -2, 5, 5, 5, 5, 5] == P12.func([[3, 1], -2, [5, 5]])
