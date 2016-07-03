@@ -11,6 +11,7 @@ import P10
 import P11
 import P12
 import P13
+import P14
 
 
 def test_p01_with_list_returns_last_one():
@@ -115,3 +116,11 @@ def test_p13_with_list_lists_dupes_one():
 
 def test_p13_with_list_lists_dupes_two():
     assert [[3, 1], -2, [5, 5]] == P13.func([1, 1, 1, -2, 5, 5, 5, 5, 5])
+
+
+def test_p14_dupes_each_element_one():
+    assert [1, 1, 6, 6, 3, 3] == P14.func([1, 6, 3])
+
+
+def test_p14_dupes_each_element_two():
+    assert ['a', 'a', 8, 8, 0, 0] == P14.func(['a', 8, 0])
