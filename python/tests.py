@@ -12,6 +12,7 @@ import P11
 import P12
 import P13
 import P14
+import P15
 
 
 def test_p01_with_list_returns_last_one():
@@ -124,3 +125,12 @@ def test_p14_dupes_each_element_one():
 
 def test_p14_dupes_each_element_two():
     assert ['a', 'a', 8, 8, 0, 0] == P14.func(['a', 8, 0])
+
+
+def test_p15_dupes_element_times_x_one():
+    assert [1, 1, 1, 2, 2, 2, 0, 0, 0] == P15.func([1, 2, 0], 3)
+
+
+def test_p15_dupes_element_times_x_two():
+    assert ['d', 'd', 'd', 'd', 'd', 1, 1, 1, 1, 1] == P15.func(['d', 1], 5)
+
