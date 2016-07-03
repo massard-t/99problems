@@ -15,6 +15,7 @@ import P14
 import P15
 import P16
 import P17
+import P18
 
 
 def test_p01_with_list_returns_last_one():
@@ -155,3 +156,11 @@ def test_p17_splits_at_n_two():
     first, second = P17.func([0, 2, 1, 1], 1)
     assert [0] == first
     assert [2, 1, 1] == second
+
+
+def test_p18_slices_at_i_k_one():
+    assert [2, 3, 4] == P18.func([1, 2, 3, 4, 5, 6], 2, 5)
+
+
+def test_p18_slices_at_i_k_two():
+    assert [1, 2, 3] == P18.func([1, 2, 3, 4, 5, 60], 1, 4)
