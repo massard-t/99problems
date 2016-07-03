@@ -14,6 +14,7 @@ import P13
 import P14
 import P15
 import P16
+import P17
 
 
 def test_p01_with_list_returns_last_one():
@@ -142,3 +143,15 @@ def test_p16_removes_nth_element_one():
 
 def test_p16_removes_nth_element_two():
     assert [1, 4, 5, 6, 7] == P16.func([1, 4, 20, 5, 6, 7], 3)
+
+
+def test_p17_splits_at_n_one():
+    first, second = P17.func([1, 2, 3, 4, 5], 3)
+    assert [1, 2, 3] == first
+    assert [4, 5] == second
+
+
+def test_p17_splits_at_n_two():
+    first, second = P17.func([0, 2, 1, 1], 1)
+    assert [0] == first
+    assert [2, 1, 1] == second
