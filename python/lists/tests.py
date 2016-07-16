@@ -23,6 +23,7 @@ import P22
 import P23
 import P24
 import P25
+import P26
 
 
 def test_p01_with_list_returns_last_one():
@@ -231,3 +232,15 @@ def test_p25_random_swap_one():
 
 def test_p25_random_swap_two():
     assert 3 == len(P25.func([3, 4, 5]))
+
+
+def test_p26_every_choices():
+    results = list(P26.func(2, [1, 2]))
+    assert (1, 2) in results
+
+
+def test_p26_every_choices_two():
+    results = list(P26.func(2, [1, 2, 3]))
+    assert (1, 2) in results
+    assert (1, 3) in results
+    assert (2, 3) in results
