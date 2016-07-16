@@ -16,6 +16,7 @@ import P15
 import P16
 import P17
 import P18
+import P19
 
 
 def test_p01_with_list_returns_last_one():
@@ -164,3 +165,11 @@ def test_p18_slices_at_i_k_one():
 
 def test_p18_slices_at_i_k_two():
     assert [1, 2, 3] == P18.func([1, 2, 3, 4, 5, 60], 1, 4)
+
+
+def test_p19_with_x_positive_rotates_left():
+    assert [3, 4, 5, 1, 2] == P19.func([1, 2, 3, 4, 5], 2)
+
+
+def test_p19_with_x_negative_rotates_right():
+    assert [7, 8, 1, 2, 3, 4, 5, 6] == P19.func([1, 2, 3, 4, 5, 6, 7, 8], -2)
