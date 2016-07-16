@@ -20,6 +20,7 @@ import P19
 import P20
 import P21
 import P22
+import P23
 
 
 def test_p01_with_list_returns_last_one():
@@ -200,3 +201,11 @@ def test_p22_creates_list_from_min_max_one():
 
 def test_p22_creates_list_from_min_max_two():
     assert [2, 3, 4, 5, 6, 7, 8, 9] == P22.func(2, 9)
+
+
+def test_p23_pops_rnd_ele_one():
+    assert 3 == len(P23.func([1, 2, 3, 4, 5, 6], 3))
+
+
+def test_p23_pops_rnd_ele_two():
+    assert 5 == len(P23.func([1, 2, 3, 4, 5, 6], 5))
