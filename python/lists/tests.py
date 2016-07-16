@@ -19,6 +19,7 @@ import P18
 import P19
 import P20
 import P21
+import P22
 
 
 def test_p01_with_list_returns_last_one():
@@ -62,11 +63,11 @@ def test_p05_with_list_returns_rev_two():
 
 
 def test_p06_with_palindrome_returns_true():
-    assert True == P06.func([2, 5, 2])
+    assert True is P06.func([2, 5, 2])
 
 
 def test_p06_with_not_palindrome_returns_false():
-    assert False == P06.func([2, 3, 1, 8])
+    assert False is P06.func([2, 3, 1, 8])
 
 
 def test_p07_with_list_returns_flat_one():
@@ -191,3 +192,11 @@ def test_p21_inserts_data_at_pos_one():
 
 def test_p21_inserts_data_at_pos_two():
     assert [0, 2, 3, 4, 5, 6] == P21.func(0, [2, 3, 4, 5, 6], 1)
+
+
+def test_p22_creates_list_from_min_max_one():
+    assert [1, 2, 3, 4, 5] == P22.func(1, 5)
+
+
+def test_p22_creates_list_from_min_max_two():
+    assert [2, 3, 4, 5, 6, 7, 8, 9] == P22.func(2, 9)
