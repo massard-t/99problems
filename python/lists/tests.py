@@ -21,6 +21,7 @@ import P20
 import P21
 import P22
 import P23
+import P24
 
 
 def test_p01_with_list_returns_last_one():
@@ -209,3 +210,15 @@ def test_p23_pops_rnd_ele_one():
 
 def test_p23_pops_rnd_ele_two():
     assert 5 == len(P23.func([1, 2, 3, 4, 5, 6], 5))
+
+
+def test_p24_lotto_one():
+    res = P24.func(4, 50)
+    assert 4 == len(res)
+    assert 50 >= max(res)
+
+
+def test_p24_lotto_two():
+    res = P24.func(10, 500)
+    assert 10 == len(res)
+    assert 500 >= max(res)
