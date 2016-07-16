@@ -17,6 +17,7 @@ import P16
 import P17
 import P18
 import P19
+import P20
 
 
 def test_p01_with_list_returns_last_one():
@@ -173,3 +174,10 @@ def test_p19_with_x_positive_rotates_left():
 
 def test_p19_with_x_negative_rotates_right():
     assert [7, 8, 1, 2, 3, 4, 5, 6] == P19.func([1, 2, 3, 4, 5, 6, 7, 8], -2)
+
+
+def test_p20_pops_kth_ele_one():
+    assert [1, 3, 4] == P20.func([1, 2, 3, 4], 2)
+
+def test_p20_pops_kth_ele_two():
+    assert [2, 3, 4, 5, 7, 8, 9] == P20.func([2, 3, 4, 5, 6, 7, 8, 9], 5)
